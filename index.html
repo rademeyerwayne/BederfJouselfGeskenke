@@ -15,7 +15,7 @@
 <meta property="og:image" content="https://www.bederfjouself.co.za/images/fb-photo-1.jpg">
 <meta property="og:locale" content="af_ZA">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="images/fb-profile.jpg">
+<link rel="icon" href="images/own-logo-black-round.jpg">
 <meta name="theme-color" content="#14110D">
 <script type="application/ld+json">
 {
@@ -103,6 +103,16 @@
   }
   .btn-fb:hover{transform:translateY(-2px);box-shadow:0 4px 0 #0e5fce}
   .btn-fb svg{width:15px;height:15px;fill:currentColor}
+  .lang-toggle{
+    display:inline-flex;border:1.5px solid color-mix(in srgb, var(--ink) 30%, transparent);
+    border-radius:999px;overflow:hidden;
+  }
+  .lang-toggle button{
+    background:none;border:0;color:var(--ink-soft);cursor:pointer;
+    font-family:var(--sans);font-weight:700;font-size:.72rem;letter-spacing:.1em;
+    padding:7px 13px;transition:background .2s, color .2s;
+  }
+  .lang-toggle button.active{background:var(--rooi);color:var(--wit)}
   @media (max-width:720px){
     .nav{flex-direction:column;gap:10px}
     .nav-right{flex-direction:column;gap:10px}
@@ -168,7 +178,7 @@
   }
 
   /* ---------- section scaffolding ---------- */
-  section{padding:88px 0}
+  section{padding:88px 0;scroll-margin-top:90px}
   .sect-head{margin-bottom:52px;max-width:60ch}
   .sect-head h2{
     font-family:var(--serif);font-weight:500;letter-spacing:-.015em;
@@ -300,6 +310,22 @@
   .polaroid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:3px;display:block;background:var(--room-2)}
   .polaroid figcaption{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--ink-soft);margin-top:12px;line-height:1.4}
 
+  /* ---------- promo flyers ---------- */
+  .promo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,430px));gap:30px;justify-content:center}
+  @media (max-width:720px){.promo-grid{grid-template-columns:minmax(0,430px)}}
+  .promo-grid .polaroid img{aspect-ratio:2/3;object-fit:cover}
+
+  /* ---------- about extras ---------- */
+  .motto{
+    margin:24px 0 0;padding-left:18px;border-left:3px solid var(--rooi-deep);
+    font-family:var(--serif);font-style:italic;font-size:1.3rem;line-height:1.45;
+  }
+  .about-logo{
+    margin:0;background:#fff;border-radius:14px;padding:14px;
+    border:1px solid color-mix(in srgb, var(--room) 14%, transparent);
+  }
+  .about-logo img{width:100%;display:block;border-radius:8px}
+
   @media (prefers-reduced-motion: reduce){
     .rise,.reveal{opacity:1;transform:none;animation:none;transition:none}
     .hero-badge{animation:none}
@@ -313,17 +339,21 @@
 <header>
   <div class="nav">
     <a class="brand" href="#tuis">
-      <span class="brand-mark"><img src="images/fb-profile.jpg" alt=""></span>
+      <span class="brand-mark"><img src="images/own-logo-black-round.jpg" alt=""></span>
       <span class="brand-name">Bederf Jouself<small>Geskenke · Meyerton</small></span>
     </a>
     <div class="nav-right">
       <nav class="links">
-        <a href="#produkte">Produkte</a>
-        <a href="#galery">Galery</a>
-        <a href="#hoe">Hoe dit werk</a>
-        <a href="#oor-ons">Oor Ons</a>
-        <a href="#kontak">Kontak</a>
+        <a href="#produkte" data-en="Products">Produkte</a>
+        <a href="#galery" data-en="Gallery">Galery</a>
+        <a href="#hoe" data-en="How it works">Hoe dit werk</a>
+        <a href="#oor-ons" data-en="About Us">Oor Ons</a>
+        <a href="#kontak" data-en="Contact">Kontak</a>
       </nav>
+      <div class="lang-toggle" role="group" aria-label="Kies taal / Choose language">
+        <button type="button" data-lang="af" class="active" aria-pressed="true">AF</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
       <a class="btn-fb" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg>
         Facebook
@@ -336,15 +366,15 @@
 <section class="hero" id="tuis">
   <div class="wrap">
     <div>
-      <span class="kicker rise d1">Persoonlike geskenke · Meyerton Suid</span>
-      <h1 class="rise d2">Jy verdien iets <em>mooi.</em><br>Bederf jouself.</h1>
-      <p class="lede rise d3">
+      <span class="kicker rise d1" data-en="Personalised gifts · Meyerton South">Persoonlike geskenke · Meyerton Suid</span>
+      <h1 class="rise d2" data-en="You deserve something <em>lovely.</em><br>Spoil yourself.">Jy verdien iets <em>mooi.</em><br>Bederf jouself.</h1>
+      <p class="lede rise d3" data-en="Engraved gin, wine and brandy glasses and gifts for all ages — each one personalised with your name or message. Made with love in the heart of Midvaal.">
         Gegraveerde gin-, wyn- en brandewynglase en geskenke vir alle ouderdomme —
         elkeen persoonlik gemaak met jou naam of boodskap. Met liefde uit die hart van Midvaal.
       </p>
       <div class="cta-row rise d4">
-        <a class="btn btn-primary" href="#produkte">Bekyk ons geskenke</a>
-        <a class="btn btn-ghost" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">Volg ons op Facebook</a>
+        <a class="btn btn-primary" href="#produkte" data-en="Browse our gifts">Bekyk ons geskenke</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener" data-en="Follow us on Facebook">Volg ons op Facebook</a>
       </div>
     </div>
 
@@ -391,7 +421,7 @@
       <!-- rotating badge -->
       <svg class="hero-badge" viewBox="0 0 110 110">
         <defs><path id="circ" d="M55,55 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
-        <text><textPath href="#circ">MET LIEFDE GEMAAK · MEYERTON ·</textPath></text>
+        <text><textPath href="#circ" data-en="MADE WITH LOVE · MEYERTON ·">MET LIEFDE GEMAAK · MEYERTON ·</textPath></text>
       </svg>
     </div>
   </div>
@@ -401,23 +431,23 @@
 <section id="produkte">
   <div class="wrap">
     <div class="sect-head reveal">
-      <span class="kicker">Ons Produkte</span>
-      <h2>Geskenke vir alle ouderdomme — persoonlik gegraveer.</h2>
-      <p>Kies jou glas, gee ons ’n naam of boodskap, en ons maak dit joune. Perfek vir verjaarsdae, troues, Moedersdag, Vadersdag — of sommer net omdat jy dit verdien.</p>
+      <span class="kicker" data-en="Our Products">Ons Produkte</span>
+      <h2 data-en="Gifts for all ages — personally engraved.">Geskenke vir alle ouderdomme — persoonlik gegraveer.</h2>
+      <p data-en="Choose your glass, give us a name or message, and we make it yours. Perfect for birthdays, weddings, Mother's Day, Father's Day — or simply because you deserve it.">Kies jou glas, gee ons ’n naam of boodskap, en ons maak dit joune. Perfek vir verjaarsdae, troues, Moedersdag, Vadersdag — of sommer net omdat jy dit verdien.</p>
     </div>
     <div class="prod-grid">
       <div class="card reveal">
-        <span class="tag">Gewild</span>
+        <span class="tag" data-en="Popular">Gewild</span>
         <div class="glass">
           <svg viewBox="0 0 90 110" fill="none" aria-hidden="true">
             <path d="M15 8 C15 46 30 62 45 66 C60 62 75 46 75 8 Z" stroke="#F4ECDA" stroke-width="4" fill="#F5B711" fill-opacity=".12" stroke-linecap="round"/>
             <line x1="45" y1="66" x2="45" y2="98" stroke="#F4ECDA" stroke-width="4"/>
             <rect x="27" y="97" width="36" height="6" rx="3" fill="#F4ECDA"/>
-            <text x="45" y="36" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="10" fill="#F5B711">Jou naam</text>
+            <text x="45" y="36" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="10" fill="#F5B711" data-en="Your name">Jou naam</text>
           </svg>
         </div>
-        <h3>Gin Glase</h3>
-        <p>Groot balloon-glase, gegraveer met ’n naam, datum of grappige boodskap.</p>
+        <h3 data-en="Gin Glasses">Gin Glase</h3>
+        <p data-en="Large balloon glasses, engraved with a name, date or a fun message.">Groot balloon-glase, gegraveer met ’n naam, datum of grappige boodskap.</p>
       </div>
       <div class="card reveal">
         <div class="glass">
@@ -425,11 +455,11 @@
             <path d="M22 6 C22 38 32 52 45 56 C58 52 68 38 68 6 Z" stroke="#F4ECDA" stroke-width="4" fill="#F5B711" fill-opacity=".2" stroke-linecap="round"/>
             <line x1="45" y1="56" x2="45" y2="98" stroke="#F4ECDA" stroke-width="4"/>
             <rect x="27" y="97" width="36" height="6" rx="3" fill="#F4ECDA"/>
-            <text x="45" y="30" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="10" fill="#F5B711">Mamma</text>
+            <text x="45" y="30" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="10" fill="#F5B711" data-en="Mum">Mamma</text>
           </svg>
         </div>
-        <h3>Wynglase</h3>
-        <p>Elegante wynglase vir daardie spesiale iemand — of vir jouself, natuurlik.</p>
+        <h3 data-en="Wine Glasses">Wynglase</h3>
+        <p data-en="Elegant wine glasses for that special someone — or for yourself, of course.">Elegante wynglase vir daardie spesiale iemand — of vir jouself, natuurlik.</p>
       </div>
       <div class="card reveal">
         <div class="glass">
@@ -437,14 +467,14 @@
             <path d="M20 22 C16 52 34 68 45 71 C56 68 74 52 70 22 C62 14 28 14 20 22 Z" stroke="#F4ECDA" stroke-width="4" fill="#E5C15C" fill-opacity=".3" stroke-linecap="round"/>
             <line x1="45" y1="71" x2="45" y2="98" stroke="#F4ECDA" stroke-width="4"/>
             <rect x="27" y="97" width="36" height="6" rx="3" fill="#F4ECDA"/>
-            <text x="45" y="42" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="12" fill="#F5B711">Pappa</text>
+            <text x="45" y="42" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="12" fill="#F5B711" data-en="Dad">Pappa</text>
           </svg>
         </div>
-        <h3>Brandewynglase</h3>
-        <p>Stewige snifters vir die manne (en die tannies!) — gegraveer soos jy wil.</p>
+        <h3 data-en="Brandy Glasses">Brandewynglase</h3>
+        <p data-en="Sturdy snifters for the gents (and the ladies!) — engraved just the way you want.">Stewige snifters vir die manne (en die tannies!) — gegraveer soos jy wil.</p>
       </div>
       <div class="card reveal">
-        <span class="tag">Vir almal</span>
+        <span class="tag" data-en="For everyone">Vir almal</span>
         <div class="glass">
           <svg viewBox="0 0 90 110" fill="none" aria-hidden="true">
             <rect x="14" y="42" width="62" height="52" rx="6" stroke="#F4ECDA" stroke-width="4" fill="#F5B711" fill-opacity=".12"/>
@@ -453,8 +483,8 @@
             <path d="M45 28 C34 12 16 18 24 30 Z M45 28 C56 12 74 18 66 30 Z" stroke="#F5B711" stroke-width="4" fill="#211C15"/>
           </svg>
         </div>
-        <h3>Geskenke &amp; Pakkies</h3>
-        <p>Geskenkidees vir alle ouderdomme — vra gerus, ons help jou iets spesiaal kies.</p>
+        <h3 data-en="Gifts &amp; Hampers">Geskenke &amp; Pakkies</h3>
+        <p data-en="Gift ideas for all ages — just ask, we'll help you choose something special.">Geskenkidees vir alle ouderdomme — vra gerus, ons help jou iets spesiaal kies.</p>
       </div>
     </div>
   </div>
@@ -464,46 +494,67 @@
 <section id="galery">
   <div class="wrap">
     <div class="sect-head reveal">
-      <span class="kicker">Uit ons winkel</span>
-      <h2>Regte bederfies, reguit van ons Facebook-blad.</h2>
-      <p>’n Paar onlangse geskenke wat ons vir kliënte gemaak het — elkeen uniek, elkeen met liefde. Volg ons op Facebook vir nog!</p>
+      <span class="kicker" data-en="From our shop">Uit ons winkel</span>
+      <h2 data-en="Real treats, straight from our Facebook page.">Regte bederfies, reguit van ons Facebook-blad.</h2>
+      <p data-en="A few recent gifts we made for clients — each one unique, each made with love. Follow us on Facebook for more!">’n Paar onlangse geskenke wat ons vir kliënte gemaak het — elkeen uniek, elkeen met liefde. Volg ons op Facebook vir nog!</p>
     </div>
     <div class="gal-grid reveal">
       <figure class="polaroid">
         <img src="images/fb-photo-3.jpg" alt="Persoonlike Darts Bar baanloper met bekermatjies en botteloopmaker" loading="lazy">
-        <figcaption>Connor se persoonlike “Darts Bar” — baanloper, bekermatjies en botteloopmaker.</figcaption>
+        <figcaption data-en="Connor's personalised “Darts Bar” — bar runner, coasters and bottle opener.">Connor se persoonlike “Darts Bar” — baanloper, bekermatjies en botteloopmaker.</figcaption>
       </figure>
       <figure class="polaroid">
         <img src="images/fb-photo-4.jpg" alt="Glinsterende persoonlike dart-blikkie" loading="lazy">
-        <figcaption>Magda se blink dart-blikkie — persoonlik gemaak, nes sy dit wou hê.</figcaption>
+        <figcaption data-en="Magda's glittery dart tin — personalised just the way she wanted it.">Magda se blink dart-blikkie — persoonlik gemaak, nes sy dit wou hê.</figcaption>
       </figure>
       <figure class="polaroid">
         <img src="images/fb-photo-5.jpg" alt="Ryp bierbeker met dartbord-ontwerp en naam" loading="lazy">
-        <figcaption>Ryp bierbeker met dartbord-ontwerp — spesiaal vir Nathan.</figcaption>
+        <figcaption data-en="Frosted beer mug with a dartboard design — specially for Nathan.">Ryp bierbeker met dartbord-ontwerp — spesiaal vir Nathan.</figcaption>
       </figure>
       <figure class="polaroid">
         <img src="images/fb-photo-6.jpg" alt="Dartbord-sleutelhouer" loading="lazy">
-        <figcaption>Dartbord-sleutelhouers — klein bederfie, groot glimlag.</figcaption>
+        <figcaption data-en="Dartboard keyrings — a small treat, a big smile.">Dartbord-sleutelhouers — klein bederfie, groot glimlag.</figcaption>
       </figure>
       <figure class="polaroid">
         <img src="images/fb-photo-7.jpg" alt="Verjaarsdag-geskenkstel met wyn en vadoek, toegedraai met strik" loading="lazy">
-        <figcaption>Verjaarsdag-geskenkstel: wyn, nuwigheid-vadoek en ’n mooi strik.</figcaption>
+        <figcaption data-en="Birthday gift set: wine, a novelty tea towel and a pretty bow.">Verjaarsdag-geskenkstel: wyn, nuwigheid-vadoek en ’n mooi strik.</figcaption>
       </figure>
       <figure class="polaroid">
         <img src="images/fb-photo-8.jpg" alt="It's Your Birthday wynbottel en vadoek" loading="lazy">
-        <figcaption>“It’s Your Birthday!” — wyn en vadoek, reg vir die partytjie.</figcaption>
+        <figcaption data-en="“It’s Your Birthday!” — wine and tea towel, ready for the party.">“It’s Your Birthday!” — wyn en vadoek, reg vir die partytjie.</figcaption>
       </figure>
       <figure class="polaroid">
         <img src="images/fb-photo-9.jpg" alt="Potlap en vadoek stel met grappige teks" loading="lazy">
-        <figcaption>“I cook as good as I look” — potlap-en-vadoekstel.</figcaption>
+        <figcaption data-en="“I cook as good as I look” — pot holder and tea towel set.">“I cook as good as I look” — potlap-en-vadoekstel.</figcaption>
       </figure>
       <figure class="polaroid">
         <img src="images/fb-photo-10.jpg" alt="Kombuis-geskenkstel met gegraveerde bamboes-snyplank, wyn en handdoeke" loading="lazy">
-        <figcaption>Volledige kombuis-stel met gegraveerde bamboes-snyplank.</figcaption>
+        <figcaption data-en="Complete kitchen set with an engraved bamboo cutting board.">Volledige kombuis-stel met gegraveerde bamboes-snyplank.</figcaption>
       </figure>
       <figure class="polaroid">
         <img src="images/fb-photo-2.jpg" alt="Vadersdag-kombo promosieplakkaat" loading="lazy">
-        <figcaption>Ons Vadersdag-kombo — hou ons Facebook-blad dop vir spesiale aanbiedinge!</figcaption>
+        <figcaption data-en="Our Father's Day combo — keep an eye on our Facebook page for specials!">Ons Vadersdag-kombo — hou ons Facebook-blad dop vir spesiale aanbiedinge!</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROMOS ============ -->
+<section id="aanbiedinge">
+  <div class="wrap">
+    <div class="sect-head reveal">
+      <span class="kicker" data-en="Specials">Aanbiedinge</span>
+      <h2 data-en="More than just glasses — we print too!">Meer as net glase — ons druk ook!</h2>
+      <p data-en="Personalised tumblers and custom printing: sublimation, DTF and vinyl on mugs, cushions, bags and more. WhatsApp us for a quote.">Persoonlike tumblers én pasgemaakte drukwerk: sublimasie, DTF en viniel op bekers, kussings, sakke en meer. WhatsApp ons gerus vir ’n kwotasie.</p>
+    </div>
+    <div class="promo-grid reveal">
+      <figure class="polaroid">
+        <img src="images/own-flyer-personalized-tumblers.jpg" alt="Promosie vir persoonlike 20oz- en wyn-tumblers met naam en klub-ontwerp" loading="lazy">
+        <figcaption data-en="Personalised 20oz and wine tumblers — with your name, team or club design.">Persoonlike 20oz- en wyn-tumblers — met jou naam, span of klub se ontwerp.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/own-flyer-custom-printing.jpg" alt="Promosie vir pasgemaakte drukwerk: sublimasie, DTF en viniel op allerlei produkte" loading="lazy">
+        <figcaption data-en="Custom printing on almost anything — WhatsApp 066 206 1718.">Pasgemaakte drukwerk op feitlik enigiets — WhatsApp 066 206 1718.</figcaption>
       </figure>
     </div>
   </div>
@@ -513,21 +564,21 @@
 <section id="hoe">
   <div class="wrap">
     <div class="sect-head reveal">
-      <span class="kicker">Hoe dit werk</span>
-      <h2>Van boodskap tot bederf, in drie maklike stappe.</h2>
+      <span class="kicker" data-en="How it works">Hoe dit werk</span>
+      <h2 data-en="From message to treat, in three easy steps.">Van boodskap tot bederf, in drie maklike stappe.</h2>
     </div>
     <div class="steps">
       <div class="step reveal">
-        <h3>Kies jou geskenk</h3>
-        <p>Blaai deur ons glase en geskenke op Facebook, of vra vir voorstelle — ons het iets vir elke geleentheid.</p>
+        <h3 data-en="Choose your gift">Kies jou geskenk</h3>
+        <p data-en="Browse our glasses and gifts on Facebook, or ask for suggestions — we have something for every occasion.">Blaai deur ons glase en geskenke op Facebook, of vra vir voorstelle — ons het iets vir elke geleentheid.</p>
       </div>
       <div class="step reveal">
-        <h3>Stuur jou boodskap</h3>
-        <p>Gee ons die naam, datum of boodskap wat jy gegraveer wil hê. Ons maak dit persoonlik en spesiaal.</p>
+        <h3 data-en="Send your message">Stuur jou boodskap</h3>
+        <p data-en="Give us the name, date or message you'd like engraved. We make it personal and special.">Gee ons die naam, datum of boodskap wat jy gegraveer wil hê. Ons maak dit persoonlik en spesiaal.</p>
       </div>
       <div class="step reveal">
-        <h3>Ontvang &amp; bederf</h3>
-        <p>Ons maak jou bestelling met liefde klaar, reg vir afhaal of aflewering in en om Meyerton.</p>
+        <h3 data-en="Receive &amp; enjoy">Ontvang &amp; bederf</h3>
+        <p data-en="We finish your order with love, ready for collection or delivery in and around Meyerton.">Ons maak jou bestelling met liefde klaar, reg vir afhaal of aflewering in en om Meyerton.</p>
       </div>
     </div>
   </div>
@@ -537,18 +588,20 @@
 <section id="oor-ons">
   <div class="wrap">
     <div class="reveal">
-      <span class="kicker">Oor Ons</span>
-      <h2>’n Klein besigheid met ’n <em>groot hart</em>, uit Meyerton Suid.</h2>
-      <p>
+      <span class="kicker" data-en="About Us">Oor Ons</span>
+      <h2 data-en="A small business with a <em>big heart</em>, from Meyerton South.">’n Klein besigheid met ’n <em>groot hart</em>, uit Meyerton Suid.</h2>
+      <p data-en="Bederf Jouself Geskenke believes everyone deserves something made just for them. Every glass is engraved with care and every gift put together with love — because a personal gift says more than a thousand words.">
         Bederf Jouself Geskenke glo elke mens verdien iets wat nét vir hulle gemaak is.
         Elke glas word met sorg gegraveer en elke geskenk met liefde saamgestel —
         want ’n persoonlike geskenk sê meer as duisend woorde.
       </p>
+      <blockquote class="motto" data-en="“In a world full of roses, be a sunflower.”">“In ’n wêreld vol van rose, wees ’n sonneblom.”</blockquote>
     </div>
     <div class="about-facts reveal">
-      <div class="fact"><span class="dot"></span><div><strong>Persoonlik gegraveer</strong><span>Elke item word individueel gemaak — geen twee is dieselfde nie.</span></div></div>
-      <div class="fact"><span class="dot"></span><div><strong>Vir alle ouderdomme</strong><span>Van kleuters tot oupas en oumas — daar’s iets vir almal.</span></div></div>
-      <div class="fact"><span class="dot"></span><div><strong>Plaaslik &amp; trots</strong><span>Gewortel in Meyerton, Midvaal — ondersteun plaaslik!</span></div></div>
+      <figure class="about-logo"><img src="images/own-logo-white.jpg" alt="Bederf Jouself Geskenke embleem: sonneblom met die leuse ‘In ’n wêreld vol van rose wees ’n sonneblom’" loading="lazy"></figure>
+      <div class="fact"><span class="dot"></span><div><strong data-en="Personally engraved">Persoonlik gegraveer</strong><span data-en="Every item is made individually — no two are the same.">Elke item word individueel gemaak — geen twee is dieselfde nie.</span></div></div>
+      <div class="fact"><span class="dot"></span><div><strong data-en="For all ages">Vir alle ouderdomme</strong><span data-en="From toddlers to grandpas and grandmas — there's something for everyone.">Van kleuters tot oupas en oumas — daar’s iets vir almal.</span></div></div>
+      <div class="fact"><span class="dot"></span><div><strong data-en="Local &amp; proud">Plaaslik &amp; trots</strong><span data-en="Rooted in Meyerton, Midvaal — support local!">Gewortel in Meyerton, Midvaal — ondersteun plaaslik!</span></div></div>
     </div>
   </div>
 </section>
@@ -558,22 +611,22 @@
   <div class="wrap">
     <div class="panel reveal">
       <div>
-        <span class="kicker">Kontak Ons</span>
-        <h2>Lus vir iets spesiaal?<br>Gesels met ons.</h2>
-        <p>Stuur vir ons ’n boodskap op Facebook — ons antwoord gou en help jou graag om die perfekte geskenk te kies.</p>
+        <span class="kicker" data-en="Contact Us">Kontak Ons</span>
+        <h2 data-en="Craving something special?<br>Chat to us.">Lus vir iets spesiaal?<br>Gesels met ons.</h2>
+        <p data-en="Send us a message on Facebook — we reply quickly and will gladly help you pick the perfect gift.">Stuur vir ons ’n boodskap op Facebook — ons antwoord gou en help jou graag om die perfekte geskenk te kies.</p>
       </div>
       <div class="contact-list">
         <a class="contact-item" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">
           <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg></span>
-          <span>Bederf Jouself Geskenke<small>Stuur ’n boodskap op Facebook</small></span>
+          <span>Bederf Jouself Geskenke<small data-en="Send us a message on Facebook">Stuur ’n boodskap op Facebook</small></span>
         </a>
         <div class="contact-item" style="cursor:default">
           <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.6 7.1 11.5 7.4 11.8.3.3.9.3 1.2 0C12.9 21.5 20 15.6 20 10c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span>
-          <span>Meyerton Suid, Midvaal<small>Gauteng, Suid-Afrika</small></span>
+          <span><span data-en="Meyerton South, Midvaal">Meyerton Suid, Midvaal</span><small data-en="Gauteng, South Africa">Gauteng, Suid-Afrika</small></span>
         </div>
         <a class="contact-item" href="tel:+27662061718">
           <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
-          <span>066 206 1718<small>Skakel of WhatsApp ons vir bestellings</small></span>
+          <span>066 206 1718<small data-en="Call or WhatsApp us for orders">Skakel of WhatsApp ons vir bestellings</small></span>
         </a>
       </div>
     </div>
@@ -582,8 +635,8 @@
 
 <footer>
   <div class="wrap">
-    <p>© 2026 Bederf Jouself Geskenke · Meyerton Suid, Midvaal</p>
-    <p>Volg ons op <a class="fb" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">Facebook</a> vir nuwe produkte en spesiale aanbiedinge.</p>
+    <p data-en="© 2026 Bederf Jouself Geskenke · Meyerton South, Midvaal">© 2026 Bederf Jouself Geskenke · Meyerton Suid, Midvaal</p>
+    <p><span data-en="Follow us on">Volg ons op</span> <a class="fb" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">Facebook</a> <span data-en="for new products and special offers.">vir nuwe produkte en spesiale aanbiedinge.</span></p>
   </div>
 </footer>
 
@@ -595,6 +648,31 @@
     }
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // language toggle (AF default; EN stored in data-en attributes)
+  const TITLES = {
+    af: 'Bederf Jouself Geskenke — Persoonlike Geskenke, Meyerton',
+    en: 'Bederf Jouself Geskenke — Personalised Gifts, Meyerton'
+  };
+  function setLang(lang){
+    document.querySelectorAll('[data-en]').forEach(el => {
+      if (el.dataset.af === undefined) el.dataset.af = el.innerHTML;
+      el.innerHTML = lang === 'en' ? el.dataset.en : el.dataset.af;
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.title = TITLES[lang];
+    document.querySelectorAll('.lang-toggle button').forEach(b => {
+      const on = b.dataset.lang === lang;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-pressed', on);
+    });
+    try { localStorage.setItem('bj-lang', lang); } catch(e) {}
+  }
+  document.querySelectorAll('.lang-toggle button').forEach(b =>
+    b.addEventListener('click', () => setLang(b.dataset.lang)));
+  let savedLang = 'af';
+  try { savedLang = localStorage.getItem('bj-lang') || 'af'; } catch(e) {}
+  if (savedLang === 'en') setLang('en');
 </script>
 </body>
 </html>
