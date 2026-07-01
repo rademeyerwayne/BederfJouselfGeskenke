@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bederf Jouself Geskenke — Persoonlike Geskenke, Meyerton</title>
+<meta name="description" content="Bederf Jouself Geskenke in Meyerton Suid — persoonlike gegraveerde gin-, wyn- en brandewynglase en geskenke vir alle ouderdomme.">
+<!-- Vervang die placeholder-domein en og:image sodra die werf 'n regte adres het -->
+<link rel="canonical" href="https://www.bederfjouself.co.za/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bederf Jouself Geskenke">
+<meta property="og:title" content="Bederf Jouself Geskenke — Persoonlike Geskenke, Meyerton">
+<meta property="og:description" content="Persoonlike gegraveerde gin-, wyn- en brandewynglase en geskenke vir alle ouderdomme, uit Meyerton Suid.">
+<meta property="og:url" content="https://www.bederfjouself.co.za/">
+<meta property="og:image" content="https://www.bederfjouself.co.za/images/fb-photo-1.jpg">
+<meta property="og:locale" content="af_ZA">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="images/fb-profile.jpg">
+<meta name="theme-color" content="#F6EEE3">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GiftShop",
+  "name": "Bederf Jouself Geskenke",
+  "description": "Persoonlike gegraveerde gin-, wyn- en brandewynglase en geskenke vir alle ouderdomme.",
+  "url": "https://www.bederfjouself.co.za/",
+  "sameAs": ["https://www.facebook.com/BederfJouselfGeskenke/"],
+  "telephone": "+27662061718",
+  "image": "https://www.bederfjouself.co.za/images/fb-photo-1.jpg",
+  "address": { "@type": "PostalAddress", "addressLocality": "Meyerton", "addressRegion": "Gauteng", "addressCountry": "ZA" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Karla:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --room:   #F6EEE3;   /* warm linen */
+    --room-2: #EFE2D0;   /* deeper linen */
+    --ink:    #3B2A23;   /* espresso */
+    --ink-soft:#6B5648;
+    --rooi:   #B3492F;   /* terracotta / burnt rooibos */
+    --rooi-deep:#8F3521;
+    --goud:   #C99A45;   /* engraver's gold */
+    --wit:    #FDFAF4;
+    --serif: "Fraunces", Georgia, serif;
+    --sans:  "Karla", Verdana, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    background:var(--room);
+    color:var(--ink);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  /* paper grain over everything */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.5;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.23 0 0 0 0 0.16 0 0 0 0 0.13 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  ::selection{background:var(--rooi);color:var(--wit)}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb, var(--room) 88%, transparent);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid color-mix(in srgb, var(--ink) 14%, transparent);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1120px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+  .brand-mark{
+    width:40px;height:40px;border-radius:50%;
+    background:var(--rooi);display:grid;place-items:center;flex-shrink:0;
+    font-family:var(--serif);font-weight:700;color:var(--wit);font-size:1.05rem;
+    box-shadow:0 2px 0 var(--rooi-deep);
+    overflow:hidden;
+  }
+  .brand-mark img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
+  .brand-name{font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.01em;line-height:1.15}
+  .brand-name small{display:block;font-family:var(--sans);font-weight:600;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rooi)}
+  nav.links{display:flex;gap:28px}
+  nav.links a{
+    text-decoration:none;color:var(--ink-soft);font-weight:600;font-size:.85rem;
+    letter-spacing:.08em;text-transform:uppercase;position:relative;
+  }
+  nav.links a::after{
+    content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--rooi);transition:width .25s ease;
+  }
+  nav.links a:hover::after,
+  nav.links a:focus-visible::after{width:100%}
+  .nav-right{display:flex;align-items:center;gap:24px}
+  .btn-fb{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:9px 18px;border-radius:999px;text-decoration:none;
+    background:#1877F2;color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.04em;
+    box-shadow:0 2px 0 #0e5fce;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn-fb:hover{transform:translateY(-2px);box-shadow:0 4px 0 #0e5fce}
+  .btn-fb svg{width:15px;height:15px;fill:currentColor}
+  @media (max-width:720px){
+    .nav{flex-direction:column;gap:10px}
+    .nav-right{flex-direction:column;gap:10px}
+    nav.links{gap:14px;flex-wrap:wrap;justify-content:center;font-size:.75rem}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{position:relative;padding:72px 0 96px;overflow:hidden}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+  @media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-art{max-width:420px;margin:0 auto}}
+  .kicker{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:.72rem;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--rooi);
+    margin-bottom:22px;
+  }
+  .kicker::before{content:"";width:34px;height:2px;background:var(--rooi)}
+  h1{
+    font-family:var(--serif);
+    font-size:clamp(2.9rem, 7vw, 5.2rem);
+    font-weight:500;line-height:1.02;letter-spacing:-.02em;
+  }
+  h1 em{font-style:italic;color:var(--rooi);font-weight:600}
+  .hero p.lede{
+    margin:26px 0 34px;max-width:46ch;font-size:1.08rem;color:var(--ink-soft);
+  }
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:14px 26px;border-radius:999px;text-decoration:none;
+    font-weight:700;font-size:.9rem;letter-spacing:.04em;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--rooi);color:var(--wit);box-shadow:0 3px 0 var(--rooi-deep)}
+  .btn-primary:hover{box-shadow:0 5px 0 var(--rooi-deep)}
+  .btn-ghost{border:2px solid var(--ink);color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:var(--room)}
+
+  /* staggered load-in */
+  .rise{opacity:0;transform:translateY(22px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  .d1{animation-delay:.05s}.d2{animation-delay:.18s}.d3{animation-delay:.32s}.d4{animation-delay:.46s}.d5{animation-delay:.6s}
+
+  /* hero artwork — engraved glasses on a shelf */
+  .hero-art{position:relative}
+  .hero-art .art{width:100%;height:auto;display:block}
+  .hero-badge{
+    position:absolute;top:-8px;right:-6px;width:110px;height:110px;
+    animation:spin 22s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .hero-badge text{font-family:var(--sans);font-weight:700;font-size:9.5px;letter-spacing:2.2px;text-transform:uppercase;fill:var(--rooi)}
+  @media (max-width:520px){.hero-badge{display:none}}
+
+  /* big background word */
+  .hero::after{
+    content:"Bederf";
+    position:absolute;bottom:-30px;left:-10px;z-index:-1;
+    font-family:var(--serif);font-style:italic;font-weight:600;
+    font-size:clamp(8rem, 22vw, 19rem);line-height:1;
+    color:transparent;-webkit-text-stroke:1.5px color-mix(in srgb, var(--ink) 14%, transparent);
+    pointer-events:none;user-select:none;
+  }
+
+  /* ---------- section scaffolding ---------- */
+  section{padding:88px 0}
+  .sect-head{margin-bottom:52px;max-width:60ch}
+  .sect-head h2{
+    font-family:var(--serif);font-weight:500;letter-spacing:-.015em;
+    font-size:clamp(2rem, 4.4vw, 3rem);line-height:1.08;margin-top:14px;
+  }
+  .sect-head p{margin-top:14px;color:var(--ink-soft)}
+
+  /* scroll reveal */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- products ---------- */
+  #produkte{background:var(--room-2);border-block:1px solid color-mix(in srgb, var(--ink) 10%, transparent)}
+  .prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media (max-width:980px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:520px){.prod-grid{grid-template-columns:1fr}}
+  .card{
+    background:var(--wit);border:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    border-radius:18px;padding:30px 24px 26px;position:relative;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:0 18px 34px -18px color-mix(in srgb, var(--ink) 40%, transparent)}
+  .card:nth-child(2){transform:translateY(18px)}
+  .card:nth-child(2):hover{transform:translateY(12px)}
+  .card:nth-child(4){transform:translateY(18px)}
+  .card:nth-child(4):hover{transform:translateY(12px)}
+  @media (max-width:980px){.card:nth-child(n){transform:none}}
+  .card .glass{height:120px;display:grid;place-items:center;margin-bottom:20px}
+  .card .glass svg{height:112px;transition:transform .3s ease}
+  .card:hover .glass svg{transform:rotate(-4deg) scale(1.05)}
+  .card h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;letter-spacing:-.01em}
+  .card p{font-size:.92rem;color:var(--ink-soft);margin-top:8px}
+  .card .tag{
+    position:absolute;top:16px;right:16px;
+    font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--rooi-deep);border:1.5px solid var(--goud);border-radius:999px;padding:4px 10px;
+  }
+
+  /* ---------- how it works ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:stap}
+  @media (max-width:820px){.steps{grid-template-columns:1fr;max-width:480px}}
+  .step{
+    counter-increment:stap;position:relative;
+    padding:34px 28px 30px;border-radius:18px;
+    background:var(--wit);border:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  }
+  .step::before{
+    content:"0" counter(stap);
+    font-family:var(--serif);font-style:italic;font-weight:600;
+    font-size:2.6rem;color:var(--rooi);display:block;margin-bottom:10px;line-height:1;
+  }
+  .step h3{font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .step p{font-size:.93rem;color:var(--ink-soft);margin-top:8px}
+
+  /* ---------- about strip ---------- */
+  #oor-ons{background:var(--ink);color:var(--room)}
+  #oor-ons .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  @media (max-width:820px){#oor-ons .wrap{grid-template-columns:1fr}}
+  #oor-ons .kicker{color:var(--goud)}
+  #oor-ons .kicker::before{background:var(--goud)}
+  #oor-ons h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.12;letter-spacing:-.015em}
+  #oor-ons h2 em{color:var(--goud);font-weight:600}
+  #oor-ons p{margin-top:18px;color:color-mix(in srgb, var(--room) 78%, transparent)}
+  .about-facts{display:grid;gap:14px}
+  .fact{
+    display:flex;gap:16px;align-items:flex-start;
+    padding:20px 22px;border-radius:14px;
+    background:color-mix(in srgb, var(--room) 7%, transparent);
+    border:1px solid color-mix(in srgb, var(--room) 16%, transparent);
+  }
+  .fact .dot{width:10px;height:10px;border-radius:50%;background:var(--goud);margin-top:7px;flex-shrink:0}
+  .fact strong{font-family:var(--serif);font-size:1.05rem;font-weight:600;display:block}
+  .fact span{font-size:.9rem;color:color-mix(in srgb, var(--room) 72%, transparent)}
+
+  /* ---------- contact ---------- */
+  #kontak .panel{
+    background:var(--wit);border:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    border-radius:24px;padding:56px 48px;
+    display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;
+    position:relative;overflow:hidden;
+  }
+  @media (max-width:820px){#kontak .panel{grid-template-columns:1fr;padding:40px 28px}}
+  #kontak .panel::after{
+    content:"";position:absolute;right:-70px;bottom:-70px;width:260px;height:260px;border-radius:50%;
+    background:radial-gradient(circle, color-mix(in srgb, var(--rooi) 16%, transparent), transparent 68%);
+    pointer-events:none;
+  }
+  #kontak h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.9rem,4vw,2.7rem);letter-spacing:-.015em;line-height:1.1}
+  #kontak p{margin-top:14px;color:var(--ink-soft);max-width:44ch}
+  .contact-list{display:grid;gap:12px}
+  .contact-item{
+    display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);
+    padding:16px 20px;border-radius:14px;border:1.5px solid color-mix(in srgb, var(--ink) 14%, transparent);
+    font-weight:600;transition:border-color .2s, background .2s;
+  }
+  .contact-item:hover{border-color:var(--rooi);background:color-mix(in srgb, var(--rooi) 6%, transparent)}
+  .contact-item .ic{
+    width:38px;height:38px;border-radius:10px;background:var(--rooi);color:var(--wit);
+    display:grid;place-items:center;flex-shrink:0;
+  }
+  .contact-item .ic svg{width:18px;height:18px;fill:currentColor}
+  .contact-item small{display:block;font-weight:500;font-size:.78rem;color:var(--ink-soft)}
+
+  /* ---------- footer ---------- */
+  footer{
+    border-top:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    padding:30px 0 36px;
+  }
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  footer p{font-size:.82rem;color:var(--ink-soft)}
+  footer .fb{color:var(--rooi);font-weight:700;text-decoration:none}
+  footer .fb:hover{text-decoration:underline}
+
+  /* ---------- gallery ---------- */
+  .gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  @media (max-width:900px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){.gal-grid{grid-template-columns:1fr;max-width:360px;margin:0 auto}}
+  .polaroid{
+    margin:0;background:var(--wit);
+    border:1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+    border-radius:6px;padding:12px 12px 14px;
+    box-shadow:0 12px 24px -14px color-mix(in srgb, var(--ink) 45%, transparent);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .polaroid:nth-child(3n+1){transform:rotate(-1.6deg)}
+  .polaroid:nth-child(3n+2){transform:rotate(1.2deg)}
+  .polaroid:nth-child(3n){transform:rotate(2deg)}
+  .polaroid:hover{transform:rotate(0) translateY(-6px) scale(1.02);box-shadow:0 22px 38px -16px color-mix(in srgb, var(--ink) 50%, transparent)}
+  .polaroid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:3px;display:block;background:var(--room-2)}
+  .polaroid figcaption{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--ink-soft);margin-top:12px;line-height:1.4}
+
+  @media (prefers-reduced-motion: reduce){
+    .rise,.reveal{opacity:1;transform:none;animation:none;transition:none}
+    .hero-badge{animation:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#tuis">
+      <span class="brand-mark"><img src="images/fb-profile.jpg" alt=""></span>
+      <span class="brand-name">Bederf Jouself<small>Geskenke · Meyerton</small></span>
+    </a>
+    <div class="nav-right">
+      <nav class="links">
+        <a href="#produkte">Produkte</a>
+        <a href="#galery">Galery</a>
+        <a href="#hoe">Hoe dit werk</a>
+        <a href="#oor-ons">Oor Ons</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <a class="btn-fb" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="tuis">
+  <div class="wrap">
+    <div>
+      <span class="kicker rise d1">Persoonlike geskenke · Meyerton Suid</span>
+      <h1 class="rise d2">Jy verdien iets <em>mooi.</em><br>Bederf jouself.</h1>
+      <p class="lede rise d3">
+        Gegraveerde gin-, wyn- en brandewynglase en geskenke vir alle ouderdomme —
+        elkeen persoonlik gemaak met jou naam of boodskap. Met liefde uit die hart van Midvaal.
+      </p>
+      <div class="cta-row rise d4">
+        <a class="btn btn-primary" href="#produkte">Bekyk ons geskenke</a>
+        <a class="btn btn-ghost" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">Volg ons op Facebook</a>
+      </div>
+    </div>
+
+    <div class="hero-art rise d5" aria-hidden="true">
+      <!-- three engraved glasses -->
+      <svg class="art" viewBox="0 0 460 360" fill="none">
+        <!-- shelf -->
+        <rect x="20" y="318" width="420" height="10" rx="5" fill="#3B2A23" opacity=".85"/>
+        <ellipse cx="230" cy="345" rx="180" ry="10" fill="#3B2A23" opacity=".08"/>
+        <!-- gin balloon glass -->
+        <g>
+          <path d="M64 96 C70 132 92 152 118 158 C144 152 166 132 172 96 L64 96 Z" fill="#B3492F" opacity=".18"/>
+          <path d="M60 70 C60 130 90 158 118 164 C146 158 176 130 176 70"
+                stroke="#3B2A23" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <line x1="118" y1="164" x2="118" y2="310" stroke="#3B2A23" stroke-width="5"/>
+          <rect x="88" y="308" width="60" height="8" rx="4" fill="#3B2A23"/>
+          <text x="118" y="128" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="22" fill="#8F3521">Ansie</text>
+        </g>
+        <!-- wine glass (taller, centre) -->
+        <g>
+          <path d="M199 78 C204 122 228 140 254 146 C280 140 304 122 309 78 L199 78 Z" fill="#8F3521" opacity=".34"/>
+          <path d="M196 42 C196 116 226 142 254 148 C282 142 312 116 312 42"
+                stroke="#3B2A23" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <line x1="254" y1="148" x2="254" y2="310" stroke="#3B2A23" stroke-width="5"/>
+          <rect x="222" y="308" width="64" height="8" rx="4" fill="#3B2A23"/>
+          <text x="254" y="70" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="20" fill="#8F3521">Liefde</text>
+        </g>
+        <!-- brandy snifter -->
+        <g>
+          <path d="M333 128 C340 158 360 174 382 179 C404 174 424 158 431 128 L333 128 Z" fill="#C99A45" opacity=".4"/>
+          <path d="M330 96 C324 150 352 176 382 182 C412 176 440 150 434 96 C420 84 344 84 330 96 Z"
+                stroke="#3B2A23" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <line x1="382" y1="182" x2="382" y2="310" stroke="#3B2A23" stroke-width="5"/>
+          <rect x="352" y="308" width="60" height="8" rx="4" fill="#3B2A23"/>
+          <text x="382" y="118" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="19" fill="#8F3521">Oupa</text>
+        </g>
+        <!-- sparkles -->
+        <g fill="#C99A45">
+          <path d="M52 30 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 Z"/>
+          <path d="M320 20 l3 8 8 3 -8 3 -3 8 -3 -8 -8 -3 8 -3 Z"/>
+          <path d="M430 60 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5 Z"/>
+        </g>
+      </svg>
+      <!-- rotating badge -->
+      <svg class="hero-badge" viewBox="0 0 110 110">
+        <defs><path id="circ" d="M55,55 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+        <text><textPath href="#circ">MET LIEFDE GEMAAK · MEYERTON ·</textPath></text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="produkte">
+  <div class="wrap">
+    <div class="sect-head reveal">
+      <span class="kicker">Ons Produkte</span>
+      <h2>Geskenke vir alle ouderdomme — persoonlik gegraveer.</h2>
+      <p>Kies jou glas, gee ons ’n naam of boodskap, en ons maak dit joune. Perfek vir verjaarsdae, troues, Moedersdag, Vadersdag — of sommer net omdat jy dit verdien.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="card reveal">
+        <span class="tag">Gewild</span>
+        <div class="glass">
+          <svg viewBox="0 0 90 110" fill="none" aria-hidden="true">
+            <path d="M15 8 C15 46 30 62 45 66 C60 62 75 46 75 8 Z" stroke="#3B2A23" stroke-width="4" fill="#B3492F" fill-opacity=".12" stroke-linecap="round"/>
+            <line x1="45" y1="66" x2="45" y2="98" stroke="#3B2A23" stroke-width="4"/>
+            <rect x="27" y="97" width="36" height="6" rx="3" fill="#3B2A23"/>
+            <text x="45" y="36" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#8F3521">Jou naam</text>
+          </svg>
+        </div>
+        <h3>Gin Glase</h3>
+        <p>Groot balloon-glase, gegraveer met ’n naam, datum of grappige boodskap.</p>
+      </div>
+      <div class="card reveal">
+        <div class="glass">
+          <svg viewBox="0 0 90 110" fill="none" aria-hidden="true">
+            <path d="M22 6 C22 38 32 52 45 56 C58 52 68 38 68 6 Z" stroke="#3B2A23" stroke-width="4" fill="#8F3521" fill-opacity=".2" stroke-linecap="round"/>
+            <line x1="45" y1="56" x2="45" y2="98" stroke="#3B2A23" stroke-width="4"/>
+            <rect x="27" y="97" width="36" height="6" rx="3" fill="#3B2A23"/>
+            <text x="45" y="30" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="12" fill="#8F3521">Mamma</text>
+          </svg>
+        </div>
+        <h3>Wynglase</h3>
+        <p>Elegante wynglase vir daardie spesiale iemand — of vir jouself, natuurlik.</p>
+      </div>
+      <div class="card reveal">
+        <div class="glass">
+          <svg viewBox="0 0 90 110" fill="none" aria-hidden="true">
+            <path d="M20 22 C16 52 34 68 45 71 C56 68 74 52 70 22 C62 14 28 14 20 22 Z" stroke="#3B2A23" stroke-width="4" fill="#C99A45" fill-opacity=".3" stroke-linecap="round"/>
+            <line x1="45" y1="71" x2="45" y2="98" stroke="#3B2A23" stroke-width="4"/>
+            <rect x="27" y="97" width="36" height="6" rx="3" fill="#3B2A23"/>
+            <text x="45" y="42" text-anchor="middle" font-family="Fraunces, serif" font-style="italic" font-size="12" fill="#8F3521">Pappa</text>
+          </svg>
+        </div>
+        <h3>Brandewynglase</h3>
+        <p>Stewige snifters vir die manne (en die tannies!) — gegraveer soos jy wil.</p>
+      </div>
+      <div class="card reveal">
+        <span class="tag">Vir almal</span>
+        <div class="glass">
+          <svg viewBox="0 0 90 110" fill="none" aria-hidden="true">
+            <rect x="14" y="42" width="62" height="52" rx="6" stroke="#3B2A23" stroke-width="4" fill="#B3492F" fill-opacity=".12"/>
+            <rect x="10" y="30" width="70" height="16" rx="4" stroke="#3B2A23" stroke-width="4" fill="#FDFAF4"/>
+            <line x1="45" y1="30" x2="45" y2="94" stroke="#B3492F" stroke-width="6"/>
+            <path d="M45 28 C34 12 16 18 24 30 Z M45 28 C56 12 74 18 66 30 Z" stroke="#B3492F" stroke-width="4" fill="#FDFAF4"/>
+          </svg>
+        </div>
+        <h3>Geskenke &amp; Pakkies</h3>
+        <p>Geskenkidees vir alle ouderdomme — vra gerus, ons help jou iets spesiaal kies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="galery">
+  <div class="wrap">
+    <div class="sect-head reveal">
+      <span class="kicker">Uit ons winkel</span>
+      <h2>Regte bederfies, reguit van ons Facebook-blad.</h2>
+      <p>’n Paar onlangse geskenke wat ons vir kliënte gemaak het — elkeen uniek, elkeen met liefde. Volg ons op Facebook vir nog!</p>
+    </div>
+    <div class="gal-grid reveal">
+      <figure class="polaroid">
+        <img src="images/fb-photo-3.jpg" alt="Persoonlike Darts Bar baanloper met bekermatjies en botteloopmaker" loading="lazy">
+        <figcaption>Connor se persoonlike “Darts Bar” — baanloper, bekermatjies en botteloopmaker.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/fb-photo-4.jpg" alt="Glinsterende persoonlike dart-blikkie" loading="lazy">
+        <figcaption>Magda se blink dart-blikkie — persoonlik gemaak, nes sy dit wou hê.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/fb-photo-5.jpg" alt="Ryp bierbeker met dartbord-ontwerp en naam" loading="lazy">
+        <figcaption>Ryp bierbeker met dartbord-ontwerp — spesiaal vir Nathan.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/fb-photo-6.jpg" alt="Dartbord-sleutelhouer" loading="lazy">
+        <figcaption>Dartbord-sleutelhouers — klein bederfie, groot glimlag.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/fb-photo-7.jpg" alt="Verjaarsdag-geskenkstel met wyn en vadoek, toegedraai met strik" loading="lazy">
+        <figcaption>Verjaarsdag-geskenkstel: wyn, nuwigheid-vadoek en ’n mooi strik.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/fb-photo-8.jpg" alt="It's Your Birthday wynbottel en vadoek" loading="lazy">
+        <figcaption>“It’s Your Birthday!” — wyn en vadoek, reg vir die partytjie.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/fb-photo-9.jpg" alt="Potlap en vadoek stel met grappige teks" loading="lazy">
+        <figcaption>“I cook as good as I look” — potlap-en-vadoekstel.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/fb-photo-10.jpg" alt="Kombuis-geskenkstel met gegraveerde bamboes-snyplank, wyn en handdoeke" loading="lazy">
+        <figcaption>Volledige kombuis-stel met gegraveerde bamboes-snyplank.</figcaption>
+      </figure>
+      <figure class="polaroid">
+        <img src="images/fb-photo-2.jpg" alt="Vadersdag-kombo promosieplakkaat" loading="lazy">
+        <figcaption>Ons Vadersdag-kombo — hou ons Facebook-blad dop vir spesiale aanbiedinge!</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section id="hoe">
+  <div class="wrap">
+    <div class="sect-head reveal">
+      <span class="kicker">Hoe dit werk</span>
+      <h2>Van boodskap tot bederf, in drie maklike stappe.</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <h3>Kies jou geskenk</h3>
+        <p>Blaai deur ons glase en geskenke op Facebook, of vra vir voorstelle — ons het iets vir elke geleentheid.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Stuur jou boodskap</h3>
+        <p>Gee ons die naam, datum of boodskap wat jy gegraveer wil hê. Ons maak dit persoonlik en spesiaal.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Ontvang &amp; bederf</h3>
+        <p>Ons maak jou bestelling met liefde klaar, reg vir afhaal of aflewering in en om Meyerton.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="oor-ons">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="kicker">Oor Ons</span>
+      <h2>’n Klein besigheid met ’n <em>groot hart</em>, uit Meyerton Suid.</h2>
+      <p>
+        Bederf Jouself Geskenke glo elke mens verdien iets wat nét vir hulle gemaak is.
+        Elke glas word met sorg gegraveer en elke geskenk met liefde saamgestel —
+        want ’n persoonlike geskenk sê meer as duisend woorde.
+      </p>
+    </div>
+    <div class="about-facts reveal">
+      <div class="fact"><span class="dot"></span><div><strong>Persoonlik gegraveer</strong><span>Elke item word individueel gemaak — geen twee is dieselfde nie.</span></div></div>
+      <div class="fact"><span class="dot"></span><div><strong>Vir alle ouderdomme</strong><span>Van kleuters tot oupas en oumas — daar’s iets vir almal.</span></div></div>
+      <div class="fact"><span class="dot"></span><div><strong>Plaaslik &amp; trots</strong><span>Gewortel in Meyerton, Midvaal — ondersteun plaaslik!</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="kontak">
+  <div class="wrap">
+    <div class="panel reveal">
+      <div>
+        <span class="kicker">Kontak Ons</span>
+        <h2>Lus vir iets spesiaal?<br>Gesels met ons.</h2>
+        <p>Stuur vir ons ’n boodskap op Facebook — ons antwoord gou en help jou graag om die perfekte geskenk te kies.</p>
+      </div>
+      <div class="contact-list">
+        <a class="contact-item" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg></span>
+          <span>Bederf Jouself Geskenke<small>Stuur ’n boodskap op Facebook</small></span>
+        </a>
+        <div class="contact-item" style="cursor:default">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.6 7.1 11.5 7.4 11.8.3.3.9.3 1.2 0C12.9 21.5 20 15.6 20 10c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg></span>
+          <span>Meyerton Suid, Midvaal<small>Gauteng, Suid-Afrika</small></span>
+        </div>
+        <a class="contact-item" href="tel:+27662061718">
+          <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+          <span>066 206 1718<small>Skakel of WhatsApp ons vir bestellings</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Bederf Jouself Geskenke · Meyerton Suid, Midvaal</p>
+    <p>Volg ons op <a class="fb" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">Facebook</a> vir nuwe produkte en spesiale aanbiedinge.</p>
+  </div>
+</footer>
+
+<script>
+  // scroll-reveal
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
