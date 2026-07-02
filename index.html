@@ -309,6 +309,16 @@
   .polaroid:hover{transform:rotate(0) translateY(-6px) scale(1.02);box-shadow:0 22px 38px -16px rgba(0,0,0,.75)}
   .polaroid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:3px;display:block;background:var(--room-2)}
   .polaroid figcaption{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--ink-soft);margin-top:12px;line-height:1.4}
+  .polaroid.hide{display:none}
+  .gal-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+  .gal-filters button{
+    background:none;border:1.5px solid color-mix(in srgb, var(--ink) 30%, transparent);
+    color:var(--ink-soft);cursor:pointer;border-radius:999px;padding:9px 20px;
+    font-family:var(--sans);font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;
+    transition:background .2s, color .2s, border-color .2s;
+  }
+  .gal-filters button:hover{border-color:var(--rooi);color:var(--ink)}
+  .gal-filters button.active{background:var(--rooi);border-color:var(--rooi);color:var(--wit)}
 
   /* ---------- promo flyers ---------- */
   .promo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,430px));gap:30px;justify-content:center}
@@ -496,45 +506,16 @@
     <div class="sect-head reveal">
       <span class="kicker" data-en="From our shop">Uit ons winkel</span>
       <h2 data-en="Real treats, straight from our Facebook page.">Regte bederfies, reguit van ons Facebook-blad.</h2>
-      <p data-en="A few recent gifts we made for clients — each one unique, each made with love. Follow us on Facebook for more!">’n Paar onlangse geskenke wat ons vir kliënte gemaak het — elkeen uniek, elkeen met liefde. Volg ons op Facebook vir nog!</p>
+      <p data-en="Over 150 real gifts we made for clients — each one unique, each made with love. Filter by category, or follow us on Facebook for the latest!">Meer as 150 regte geskenke wat ons vir kliënte gemaak het — elkeen uniek, elkeen met liefde. Filtreer volgens kategorie, of volg ons op Facebook vir die nuutste!</p>
     </div>
-    <div class="gal-grid reveal">
-      <figure class="polaroid">
-        <img src="images/fb-photo-3.jpg" alt="Persoonlike Darts Bar baanloper met bekermatjies en botteloopmaker" loading="lazy">
-        <figcaption data-en="Connor's personalised “Darts Bar” — bar runner, coasters and bottle opener.">Connor se persoonlike “Darts Bar” — baanloper, bekermatjies en botteloopmaker.</figcaption>
-      </figure>
-      <figure class="polaroid">
-        <img src="images/fb-photo-4.jpg" alt="Glinsterende persoonlike dart-blikkie" loading="lazy">
-        <figcaption data-en="Magda's glittery dart tin — personalised just the way she wanted it.">Magda se blink dart-blikkie — persoonlik gemaak, nes sy dit wou hê.</figcaption>
-      </figure>
-      <figure class="polaroid">
-        <img src="images/fb-photo-5.jpg" alt="Ryp bierbeker met dartbord-ontwerp en naam" loading="lazy">
-        <figcaption data-en="Frosted beer mug with a dartboard design — specially for Nathan.">Ryp bierbeker met dartbord-ontwerp — spesiaal vir Nathan.</figcaption>
-      </figure>
-      <figure class="polaroid">
-        <img src="images/fb-photo-6.jpg" alt="Dartbord-sleutelhouer" loading="lazy">
-        <figcaption data-en="Dartboard keyrings — a small treat, a big smile.">Dartbord-sleutelhouers — klein bederfie, groot glimlag.</figcaption>
-      </figure>
-      <figure class="polaroid">
-        <img src="images/fb-photo-7.jpg" alt="Verjaarsdag-geskenkstel met wyn en vadoek, toegedraai met strik" loading="lazy">
-        <figcaption data-en="Birthday gift set: wine, a novelty tea towel and a pretty bow.">Verjaarsdag-geskenkstel: wyn, nuwigheid-vadoek en ’n mooi strik.</figcaption>
-      </figure>
-      <figure class="polaroid">
-        <img src="images/fb-photo-8.jpg" alt="It's Your Birthday wynbottel en vadoek" loading="lazy">
-        <figcaption data-en="“It’s Your Birthday!” — wine and tea towel, ready for the party.">“It’s Your Birthday!” — wyn en vadoek, reg vir die partytjie.</figcaption>
-      </figure>
-      <figure class="polaroid">
-        <img src="images/fb-photo-9.jpg" alt="Potlap en vadoek stel met grappige teks" loading="lazy">
-        <figcaption data-en="“I cook as good as I look” — pot holder and tea towel set.">“I cook as good as I look” — potlap-en-vadoekstel.</figcaption>
-      </figure>
-      <figure class="polaroid">
-        <img src="images/fb-photo-10.jpg" alt="Kombuis-geskenkstel met gegraveerde bamboes-snyplank, wyn en handdoeke" loading="lazy">
-        <figcaption data-en="Complete kitchen set with an engraved bamboo cutting board.">Volledige kombuis-stel met gegraveerde bamboes-snyplank.</figcaption>
-      </figure>
-      <figure class="polaroid">
-        <img src="images/fb-photo-2.jpg" alt="Vadersdag-kombo promosieplakkaat" loading="lazy">
-        <figcaption data-en="Our Father's Day combo — keep an eye on our Facebook page for specials!">Ons Vadersdag-kombo — hou ons Facebook-blad dop vir spesiale aanbiedinge!</figcaption>
-      </figure>
+    <div class="gal-filters reveal" role="group" aria-label="Filtreer galery / Filter gallery">
+      <button type="button" data-cat="alles" class="active" data-en="All">Alles</button>
+      <button type="button" data-cat="produkte" data-en="Products">Produkte</button>
+      <button type="button" data-cat="sport" data-en="Sport">Sport</button>
+      <button type="button" data-cat="feesdae" data-en="Festive days">Feesdae</button>
+      <button type="button" data-cat="promos" data-en="Specials">Promos</button>
+    </div>
+    <div class="gal-grid" id="gal-grid">
     </div>
   </div>
 </section>
@@ -640,7 +621,36 @@
   </div>
 </footer>
 
+<script src="gallery-data.js"></script>
 <script>
+  // render gallery from data (before language init so the toggle covers these nodes)
+  const galGrid = document.getElementById('gal-grid');
+  if (window.GALLERY && galGrid) {
+    const frag = document.createDocumentFragment();
+    for (const g of window.GALLERY) {
+      const fig = document.createElement('figure');
+      fig.className = 'polaroid';
+      fig.dataset.cat = g.c;
+      const img = document.createElement('img');
+      img.src = 'images/' + g.f;
+      img.loading = 'lazy';
+      img.alt = g.af;
+      const cap = document.createElement('figcaption');
+      cap.textContent = g.af;
+      cap.dataset.en = g.en;
+      fig.append(img, cap);
+      frag.appendChild(fig);
+    }
+    galGrid.appendChild(frag);
+    document.querySelectorAll('.gal-filters button').forEach(btn =>
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.gal-filters button').forEach(b => b.classList.toggle('active', b === btn));
+        const cat = btn.dataset.cat;
+        galGrid.querySelectorAll('.polaroid').forEach(p =>
+          p.classList.toggle('hide', cat !== 'alles' && p.dataset.cat !== cat));
+      }));
+  }
+
   // scroll-reveal
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {

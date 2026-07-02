@@ -20,3 +20,152 @@ Source: https://www.facebook.com/BederfJouselfGeskenke/ (scraped 2026-07-01, hea
 - own-logo-black-round.jpg — round black paint-splatter badge logo: yellow daisy/sunflower with stem, tagline arched around the rim, yellow script "Bederf Jouself" and white "GESKENKE" — 956x945 px — square.
 - own-flyer-personalized-tumblers.jpg — promo flyer "Personalized Tumblers Available!": white 20oz and wine tumblers with "Dukes of Steel / Dukes Extraordinary League of Bikers" skull logo and name "Anna" on wooden table with sunflowers; lists customisation options and benefits, round badge logo bottom-right — 1024x1536 px — portrait.
 - own-flyer-custom-printing.jpg — promo flyer "Custom Printing Services Available!" on gold-glitter background: product collage (pillows, duffel bag "Jessica", photo mugs, tumblers, water bottles), lists sublimation/DTF/vinyl printing services, WhatsApp order number 066 206 1718 — 1024x1536 px — portrait.
+
+## Diep-skrop rondte (2026-07-02, headless Chromium, anoniem — foto-album "theater" deurklik)
+
+Bron: dieselfde FB-blad, maar via die Photos-/Mobile uploads-albums se foto-viewer (volle resolusie, meestal 1024-2048px). Datums soos op die plasing gewys. Byskrifte was meestal net die plasingsdatum; waar daar wel teks was, word dit aangehaal.
+
+- fb-photo-11.jpg — hokkie-motorlugverfrisser: meisie-hokkiespeler kunswerk "Vertrou op die Here met jou hele hart, Linda, Spreuke 3:5" — plasing 22 Jun.
+- fb-photo-12.jpg — swart hokkiestok-sak met bypassende gepersonaliseerde sak-etiket en karabynhaak — 22 Jun.
+- fb-photo-13.jpg — drie wit sportwaterbottels met hokkie-meisie kunswerk en skoolwapen — 22 Jun.
+- fb-photo-14.jpg — bamboes-snyplank "The Righteous man walks in His integrity" (Chrisma Fellowship bestelling) — 21 Jun.
+- fb-photo-15.jpg — kombuis-geskenk platlê: potlappe "I cook as good as I look", "Too Gay To Burn" vadoek, verjaarsdagwyn — 12 Jun.
+- fb-photo-16.jpg — portret-platlê van volledige kombuisstel: snyplank, wyn, vadoeke, potlappe — 12 Jun.
+- fb-photo-17.jpg — nabyskoot "No bitchin' in my kitchen" bamboes-snyplank met vadoek — 12 Jun.
+- fb-photo-18.jpg — verjaarsdagwynbottel ("It's your birthday you can wine if you want") op snyplank — 12 Jun.
+- fb-photo-19.jpg — landskap-platlê van die volledige kombuis-geskenkstel — 12 Jun.
+- fb-photo-20.jpg — vier veerpyltjiebord-drukstukke (coasters) met 'n glas bier — 12 Jun.
+- fb-photo-21.jpg — pers "little Angels" hemp-sakdruk nabyskoot — 2 Jun.
+- fb-photo-22.jpg — uitgepakte pers "Called to Life / little Angels" massagedrukte hemde (Psalm 139:13) — 2 Jun.
+- fb-photo-23.jpg — "Vaderdag Spesiaal R550" strooibiljet: kroegmat, handdoek, tumbler, sleutelring — 20 Mei.
+- fb-photo-24.jpg — "Warmth you can feel" 2L warmwaterbottel-strooibiljet (Vadersdag-fotopaneel) — 19 Mei.
+- fb-photo-25.jpg — "Eksamen Anti-Stres Kit" R150 strooibiljet met gepersonaliseerde potloodblikkie en sjokolade — 19 Mei.
+- fb-photo-26.jpg — "Premium Canvas Prints" prysstrooibiljet (A5-A0 en multi-pakke) — 19 Mei.
+- fb-photo-27.jpg — "Warmth you can feel" warmwaterbottel-strooibiljet (ouma-foto variant) — 13 Mei.
+- fb-photo-28.jpg — Vadersdag 20oz termiese tumblers R200 strooibiljet "For Dad or Grandpa" — 13 Mei.
+- fb-photo-29.jpg — Vadersdag foto-lessenaarmat R250 strooibiljet — 13 Mei.
+- fb-photo-30.jpg — Vadersdag strooibiljet "Celebrate his superpowers" (bekers en fotogeskenke) — 12 Mei.
+- fb-photo-31.jpg — Vadersdag gereedskapstel-strooibiljet "Tool Set — the perfect gift" — 12 Mei.
+- fb-photo-32.jpg — Vadersdag koelersak-strooibiljet "Like a normal dad, but cooler" — 12 Mei.
+- fb-photo-33.jpg — Moedersdag fotogeskenkstel: raam, kussing, beker en tumbler — byskrif: "Beautiful mother's day set done for a beautiful mom" — 10 Mei.
+- fb-photo-34.jpg — babavoetjie-sleutelhangers met geboortestatistieke "Elihandro" — 10 Mei.
+- fb-photo-35.jpg — houtskinkbord met familie-fotocollage — 10 Mei.
+- fb-photo-36.jpg — "Happy Mother's Day" foto-skinkbord met blomraampies — 10 Mei.
+- fb-photo-37.jpg — protea-skinkbord "God is within her, she will not fall" — 10 Mei.
+- fb-photo-38.jpg — "Hockey Gear made for champions" strooibiljet: bottels, hemde, sakke, strikke, sokkies — 9 Mei.
+- fb-photo-39.jpg — Action Netball waterbottels "Deshane" (Midvaal Bumblebees) — 5 Mei.
+- fb-photo-40.jpg — Action Netball trektou-sak 3D-voorstelling — 5 Mei.
+- fb-photo-41.jpg — klant-dankie-plasing met toegedraaide gepersonaliseerde bekers — byskrif verwys na "review van SARS JHB, so dankbaar vir sulke mooi boodskappe" — 4 Mei.
+- fb-photo-42.jpg — "Mother's Day Tray Gift" R300 strooibiljet — 22 Apr.
+- fb-photo-43.jpg — "PU Leather Wallets" foto-beursie strooibiljet — 22 Apr.
+- fb-photo-44.jpg — "Tarika" en "Linda" veldblom-tumblers met handvatsels — 19 Apr.
+- fb-photo-45.jpg — "Gelukkige Moedersdag" geskenkreeks-strooibiljet (beker, kussing, bottel, sleutelring) — 19 Apr.
+- fb-photo-46.jpg — gepersonaliseerde netbal-strikke in oranje en navy met speler-name — 15 Apr.
+- fb-photo-47.jpg — skool-serpe/sashes "Mnr Krappies & Krefies", "Mej Vissie Junior" (Laerskool A.G. Visser) — 15 Apr.
+- fb-photo-48.jpg — sash-nabyskoot met Laerskool A.G. Visser wapen — 15 Apr.
+- fb-photo-49.jpg — volledige stel gedrukte prefek-serpe ("Graad 2 - Prins", "Graad 6 - Prins") — 15 Apr.
+- fb-photo-50.jpg — sewe vlugbal-ontwerp waterbottels met name — 30 Mrt.
+- fb-photo-51.jpg — gepersonaliseerde vlugbal-sokkies waaiervormig uitgepak — 30 Mrt.
+- fb-photo-52.jpg — massabestelling swart duffelsakke met spelername en -nommers — 30 Mrt.
+- fb-photo-53.jpg — netbal-waterbottel trio "Mia" met skoolwapen — 30 Mrt.
+- fb-photo-54.jpg — netbalbottel-paar "Aviwe" ("Net 'n meisie wat lief is vir netbal") — 30 Mrt.
+- fb-photo-55.jpg — ry gepersonaliseerde netbalbottels (Angel, Danielle, Jane, e.a.) — 30 Mrt.
+- fb-photo-56.jpg — enkele netbalbottel "Melanie" (geel drag) — 30 Mrt.
+- fb-photo-57.jpg — "Personalized Wedding Gifts" strooibiljet (strooimeisie-/strooijonker-geskenke) — 15 Mrt.
+- fb-photo-58.jpg — "Personalized Hockey Bottles" strooibiljet — 15 Mrt.
+- fb-photo-59.jpg — hoop gepersonaliseerde rugbyseun-sleutelhangers met name — 14 Mrt.
+- fb-photo-60.jpg — Bederf Jouself eie handelsmerk-sleutelhanger — 14 Mrt.
+- fb-photo-61.jpg — rugbyseun-sleutelhanger "Dirk" nabyskoot — 14 Mrt.
+- fb-photo-62.jpg — O.11 rugbyspan-bestelling: sakke, rooi pette, sleutelhangers en wapens — 14 Mrt.
+- fb-photo-63.jpg — sleutelhangers en wapens detail op rugbysakke — 14 Mrt.
+- fb-photo-64.jpg — sleutelhangers "Jandré" en "Luan" met rooi pet "Ruben" — 14 Mrt.
+- fb-photo-65.jpg — "Personalized keyrings available" advertensie — 8 Mrt.
+- fb-photo-66.jpg — "Rugby Lewe" waterverf-ontwerp kunswerk met seun se foto — 8 Mrt.
+- fb-photo-67.jpg — "Awesome Rugby Water Bottles" advertensie — 8 Mrt.
+- fb-photo-68.jpg — "Personalised Netball water bottles for sale" banier — 8 Mrt.
+- fb-photo-69.jpg — "Personalized Bottles Available" strooibiljet (All Stars Netball "Karli-Han") — 6 Mrt.
+- fb-photo-70.jpg — fotokussing-strooibiljet "Turn your memories into something special" (nommer-17 collage) — 4 Mrt.
+- fb-photo-71.jpg — "Personalize your own makeup bag" advertensie — 4 Mrt.
+- fb-photo-72.jpg — Happy Easter geskenkboks met gepersonaliseerde beker en lekkers — 4 Mrt.
+- fb-photo-73.jpg — protea-tumbler met naam "Florence" — 3 Mrt.
+- fb-photo-74.jpg — protea-tumbler agterkant-ontwerp — 3 Mrt.
+- fb-photo-75.jpg — apteker-karikatuur beker — 3 Mrt.
+- fb-photo-76.jpg — familie-karikatuur fotobeker — 3 Mrt.
+- fb-photo-77.jpg — luiperddruk-dames grimeersak "Key-Leigh" — byskrif: "Makeup/toiletries bag" — 22 Feb.
+- fb-photo-78.jpg — motor-lugverfrissers met eie foto en teks "Drive safe we love you / Get home safe we need you" (advertensie) — 12 Feb.
+- fb-photo-79.jpg — foto-lugverfrisser "Get home safe I love you" — 12 Feb.
+- fb-photo-80.jpg — familieportret-lugverfrisser met reisgebed — 12 Feb.
+- fb-photo-81.jpg — familieportret-beker (kruis-en-duif kunswerk) — 11 Feb.
+- fb-photo-82.jpg — Valentynsdag "Survival Liefde Kit" met grappie-etikette en rooi strikke — 9 Feb.
+- fb-photo-83.jpg — "Aan my Honey Bun" Valentynsboks voorkant — 9 Feb.
+- fb-photo-84.jpg — Valentynsdag Honey Bun-boks met lekkernye en etikette — 9 Feb.
+- fb-photo-85.jpg — "Mom Boss" karikatuur-kunswerk — uit die "COMPETITION TIME! Show Us Your ChatGPT Character Image!" kompetisieplasing — 5 Feb.
+- fb-photo-86.jpg — "Beste Juffrou Lallie" gegraveerde leer-2026-dagboek op lessenaarkalender — 4 Jan.
+- fb-photo-87.jpg — drie onderwyser-dagboeke "Beste Juffrou Amelia / Lallie / Anique" met sonneblom-sleutelhangers — 4 Jan.
+- fb-photo-88.jpg — "little Angels" swart notaboeke met name, in bokse — 4 Jan.
+- fb-photo-89.jpg — naametiket-plakkervelle "Milan Burger" met eenhoring-sak — 4 Jan.
+- fb-photo-90.jpg — "Declan Burger" Batman-naamplakkers nabyskoot — 4 Jan.
+- fb-photo-91.jpg — panda-naamplakkers en sleutelhanger "De'shané Giezen" — 4 Jan.
+- fb-photo-92.jpg — "Tanika de Wet" naametiketvel — 4 Jan.
+- fb-photo-93.jpg — skryfbehoeftes gemerk met naamplakkers (penne, liniaal) — 4 Jan.
+- fb-photo-94.jpg — stapel Kersfees-geskenkbokse met vinielbelettering — 21 Okt 2025.
+- fb-photo-95.jpg — Grinch-geskenkboks: beker, legkaart, kersmus en koekies — 21 Okt 2025.
+- fb-photo-96.jpg — piramide Grinch-kersbekers — 21 Okt 2025.
+- fb-photo-97.jpg — foto-kersballe (baubles) — 21 Okt 2025.
+- fb-photo-98.jpg — gepersonaliseerde kersmus "Tarika" met geskenkboks — 21 Okt 2025.
+- fb-photo-99.jpg — Merry Christmas geskenkboks met glitter-kersmusse — 21 Okt 2025.
+- fb-photo-100.jpg — kersman-gordel wynetiket "He sees you when you're drinking" — 21 Okt 2025.
+- fb-photo-101.jpg — Grinch-wynetikette — 21 Okt 2025.
+- fb-photo-102.jpg — Merry Christmas T-hemde collage — 21 Okt 2025.
+- fb-photo-103.jpg — "Daddy Clause / Mommy Clause" hemde met babavoetjies — 21 Okt 2025.
+- fb-photo-104.jpg — Grinch-sjokoladeomhulsels — 21 Okt 2025.
+- fb-photo-105.jpg — kersvader-drasakke "Maak oop op 25 Desember — Aan Bella/David van Kersvader" — 21 Okt 2025.
+- fb-photo-106.jpg — gepersonaliseerde kersgeskenk-etikette — 21 Okt 2025.
+- fb-photo-107.jpg — "Grinchmas Eve Box" met toegedraaide lekkers — 21 Okt 2025.
+- fb-photo-108.jpg — Grinchmas Eve Box (elf-omhulsel variant) — 21 Okt 2025.
+- fb-photo-109.jpg — pienk/swart gesublimeerde gholfhemp-voorstelling "Inspirations Hair & Nail Studio" — 24 Aug 2025.
+- fb-photo-110.jpg — blou ATS-gholfhemp 3D-voorstelling — 24 Aug 2025.
+- fb-photo-111.jpg — Bederf Jouself geweefde kledingetiket (XL) in hemp — 24 Aug 2025.
+- fb-photo-112.jpg — Jump Street "Dare to Jump" gholfhemde (werklike drukwerk) — 24 Aug 2025.
+- fb-photo-113.jpg — massaverpakte korporatiewe hemde — 24 Aug 2025.
+- fb-photo-114.jpg — netbalfrokkie-voorstelling "Janneke" (busmotief, Psalm 144:1) — 14 Jul 2025.
+- fb-photo-115.jpg — blomme-netbalfrokkie voorstelling "Janneke" (Filippense 4:13) — 14 Jul 2025.
+- fb-photo-116.jpg — pers "Called to Life" spanhemp-voorstelling — 14 Jul 2025.
+- fb-photo-117.jpg — verpakte pienk-glitter spanhemde — 14 Jul 2025.
+- fb-photo-118.jpg — blomme-afrigterhemp voorstelling "Janneke Coach" — 14 Jul 2025.
+- fb-photo-119.jpg — "Fun Play Learn" frokkie-voorstelling — 14 Jul 2025.
+- fb-photo-120.jpg — gedrukte afrigterhemp "Hanri Coach — Fun Play Learn" (werklike kledingstuk) — 14 Jul 2025.
+- fb-photo-121.jpg — pienk verfspat-netbalhemp (werklike kledingstuk) — 14 Jul 2025.
+- fb-photo-122.jpg — Midvaal Buffels veerpyltjie-gholfhemp voorstelling, pers vlamme (Nationals 2025) — 14 Jul 2025.
+- fb-photo-123.jpg — Midvaal Buffels veerpyltjie-gholfhemp voorstelling, pienk vlamme — 14 Jul 2025.
+- fb-photo-124.jpg — "The Jackel" swart-en-seegroen gholfhemp voorstelling — 14 Jul 2025.
+- fb-photo-125.jpg — "Kak met kalmte, gooi kole pappie!" potlap en oondhandskoen — 14 Jul 2025.
+- fb-photo-126.jpg — Jump Street geborduurde logo nabyskoot — 14 Jul 2025.
+- fb-photo-127.jpg — Midvaal Buffels veerpyltjiehemp "Jacques" (werklike kledingstuk, agterkant) — 14 Jul 2025.
+- fb-photo-128.jpg — drie spelers in Midvaal Buffels-hemde — 14 Jul 2025.
+- fb-photo-129.jpg — blou Jump Street gholfhemp-voorstelling — 14 Jul 2025.
+- fb-photo-130.jpg — wit/pienk/blou spat-gholfhemp voorstelling "Inspirations" — 14 Jul 2025.
+- fb-photo-131.jpg — leeu-en-veerpyltjiebord hemp-voorstelling "Brad" — 13 Jul 2025.
+- fb-photo-132.jpg — ombre-tumblers "Geraldine" — 4 Jun 2025.
+- fb-photo-133.jpg — bolla-dame en sonneblom tumbler — 4 Jun 2025.
+- fb-photo-134.jpg — John Deere tumbler — 4 Jun 2025.
+- fb-photo-135.jpg — verweerde John Deere tumbler-variant — 4 Jun 2025.
+- fb-photo-136.jpg — veerpyltjie-tumbler en "Happy 10th anniversary Bertus" tumbler — 4 Jun 2025.
+- fb-photo-137.jpg — kamoefleer-tumbler "RYNO" — 4 Jun 2025.
+- fb-photo-138.jpg — takbok-kamoefleer tumbler — 4 Jun 2025.
+- fb-photo-139.jpg — rooi tumbler "Francois" — 4 Jun 2025.
+- fb-photo-140.jpg — Buffelsfontein Brandewyn-etiket tumbler — 4 Jun 2025.
+- fb-photo-141.jpg — Vadersdag-geskenkcollage: telefoonstaanders, sokkies, oondhandskoene, "Ek louf you teveel" — 3 Jun 2025.
+- fb-photo-142.jpg — brandewyn-geskenkmandjie collage (Buffelsfontein, Mokate, Coke) — 3 Jun 2025.
+- fb-photo-143.jpg — Miller Genuine Draft matglas-bierbeker en geskenke-collage — 3 Jun 2025.
+- fb-photo-144.jpg — tumbler- en geskenkcollage ("Kosie se vuil Coke"-sakkie, gedrukte sokkies) — 3 Jun 2025.
+- fb-photo-145.jpg — pienk afrigter-T-hemp voorstelling "Janneke Coach — Fun Play Learn" — 21 Apr 2025.
+- fb-photo-146.jpg — werklike netbalfrokkie "Janneke — Fun Play Learn" — 21 Apr 2025.
+- fb-photo-147.jpg — "Kaitlyn — Psalm 144:1" verfspat-netbalhemp — 21 Apr 2025.
+- fb-photo-148.jpg — blomme "Netball — Filippense 4:13" frokkie — 21 Apr 2025.
+- fb-photo-149.jpg — hokkie-kopband "Linda — Vertrou op die Here" soos gedra — 22 Jun (AI-info gemerk).
+- fb-photo-150.jpg — hokkietoerusting-strooibiljet (Meyerton): bottels, sportsakke, sleutelhangers, kopbande — 22 Jun.
+- fb-photo-151.jpg — "Chrisma Fellowship" logo-waterbottels — 21 Jun.
+- fb-photo-152.jpg — rye "The Righteous" gedrukte aluminiumbottels (massabestelling vir kerk) — 21 Jun.
+- fb-photo-153.jpg — geskenkbokse toegedraai met silwer strikke (massabestelling) — 21 Jun.
+- fb-photo-154.jpg — gepersonaliseerde sjokoladeplakke met strikke — 21 Jun.
