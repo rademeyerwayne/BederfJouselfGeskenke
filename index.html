@@ -83,40 +83,71 @@
   .brand-mark img{width:100%;height:100%;object-fit:cover;border-radius:50%;display:block}
   .brand-name{font-family:var(--serif);font-weight:600;font-size:1.05rem;letter-spacing:.01em;line-height:1.15}
   .brand-name small{display:block;font-family:var(--sans);font-weight:600;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rooi)}
-  nav.links{display:flex;gap:28px}
+  nav.links{display:flex;gap:2px}
   nav.links a{
-    text-decoration:none;color:var(--ink-soft);font-weight:600;font-size:.85rem;
-    letter-spacing:.08em;text-transform:uppercase;position:relative;
+    text-decoration:none;color:var(--ink-soft);font-weight:600;font-size:.82rem;
+    letter-spacing:.07em;text-transform:uppercase;position:relative;
+    padding:8px 15px;border-radius:10px;
+    transition:color .22s ease, background .22s ease;
   }
   nav.links a::after{
-    content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--rooi);transition:width .25s ease;
+    content:"";position:absolute;left:15px;right:15px;bottom:3px;height:2px;border-radius:2px;
+    background:var(--rooi);transform:scaleX(0);transform-origin:center;
+    transition:transform .28s cubic-bezier(.2,.7,.2,1);
   }
+  nav.links a:hover,
+  nav.links a:focus-visible{color:var(--ink);background:color-mix(in srgb, var(--ink) 7%, transparent)}
   nav.links a:hover::after,
-  nav.links a:focus-visible::after{width:100%}
-  .nav-right{display:flex;align-items:center;gap:24px}
-  .btn-fb{
-    display:inline-flex;align-items:center;gap:8px;
-    padding:9px 18px;border-radius:999px;text-decoration:none;
-    background:#1877F2;color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.04em;
-    box-shadow:0 2px 0 #0e5fce;
-    transition:transform .18s ease, box-shadow .18s ease;
-  }
-  .btn-fb:hover{transform:translateY(-2px);box-shadow:0 4px 0 #0e5fce}
-  .btn-fb svg{width:15px;height:15px;fill:currentColor}
+  nav.links a:focus-visible::after{transform:scaleX(1)}
+
+  .nav-right{display:flex;align-items:center;gap:18px}
+
+  /* language segmented control */
   .lang-toggle{
-    display:inline-flex;border:1.5px solid color-mix(in srgb, var(--ink) 30%, transparent);
-    border-radius:999px;overflow:hidden;
+    display:inline-flex;align-items:center;gap:2px;
+    padding:3px;border-radius:999px;
+    background:color-mix(in srgb, var(--ink) 8%, transparent);
+    border:1px solid color-mix(in srgb, var(--ink) 16%, transparent);
   }
   .lang-toggle button{
     background:none;border:0;color:var(--ink-soft);cursor:pointer;
-    font-family:var(--sans);font-weight:700;font-size:.72rem;letter-spacing:.1em;
-    padding:7px 13px;transition:background .2s, color .2s;
+    font-family:var(--sans);font-weight:700;font-size:.72rem;letter-spacing:.06em;
+    padding:6px 14px;border-radius:999px;white-space:nowrap;
+    transition:background .25s ease, color .25s ease, box-shadow .25s ease;
   }
-  .lang-toggle button.active{background:var(--rooi);color:var(--wit)}
+  .lang-toggle button:hover{color:var(--ink)}
+  .lang-toggle button.active{
+    background:linear-gradient(180deg, var(--rooi), var(--rooi-deep));
+    color:var(--wit);
+    box-shadow:0 1px 8px color-mix(in srgb, var(--rooi) 45%, transparent);
+  }
+
+  /* Facebook button — on-brand gold pill */
+  .btn-fb{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:8px 18px 8px 9px;border-radius:999px;text-decoration:none;
+    background:linear-gradient(180deg, var(--rooi), var(--rooi-deep));
+    color:var(--wit);font-weight:800;font-size:.8rem;letter-spacing:.03em;
+    box-shadow:0 4px 16px -5px color-mix(in srgb, var(--rooi) 65%, transparent),
+               inset 0 1px 0 color-mix(in srgb, #ffffff 40%, transparent);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .btn-fb:hover{
+    transform:translateY(-2px);
+    box-shadow:0 9px 24px -6px color-mix(in srgb, var(--rooi) 75%, transparent),
+               inset 0 1px 0 color-mix(in srgb, #ffffff 55%, transparent);
+  }
+  .btn-fb .fb-ic{
+    width:24px;height:24px;border-radius:50%;flex-shrink:0;
+    background:var(--wit);color:var(--rooi-deep);
+    display:grid;place-items:center;
+  }
+  .btn-fb .fb-ic svg{width:13px;height:13px;fill:currentColor;display:block}
+
   @media (max-width:720px){
-    .nav{flex-direction:column;gap:10px}
-    .nav-right{flex-direction:column;gap:10px}
-    nav.links{gap:14px;flex-wrap:wrap;justify-content:center;font-size:.75rem}
+    .nav{flex-direction:column;gap:12px}
+    .nav-right{flex-direction:column;gap:12px}
+    nav.links{gap:4px;flex-wrap:wrap;justify-content:center}
   }
 
   /* ---------- hero ---------- */
@@ -185,6 +216,16 @@
     font-size:clamp(2rem, 4.4vw, 3rem);line-height:1.08;margin-top:14px;
   }
   .sect-head p{margin-top:14px;color:var(--ink-soft)}
+
+  /* ---------- tabbed pages (each nav tab loads as its own clean view) ---------- */
+  .page{display:none}
+  .page.active{display:block;animation:pageIn .5s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes pageIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  /* trim the leading gap so each tab starts clean under the header */
+  .page:not(.hero){padding-top:64px}
+  nav.links a.active{color:var(--rooi);background:color-mix(in srgb, var(--rooi) 10%, transparent)}
+  nav.links a.active::after{transform:scaleX(1)}
+  @media (prefers-reduced-motion: reduce){.page.active{animation:none}}
 
   /* scroll reveal */
   .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1)}
@@ -342,7 +383,7 @@
     html{scroll-behavior:auto}
   }
 </style>
-<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+<noscript><style>.reveal{opacity:1;transform:none}.page{display:block!important}</style></noscript>
 </head>
 <body>
 
@@ -354,26 +395,28 @@
     </a>
     <div class="nav-right">
       <nav class="links">
+        <a href="#tuis" data-en="Home">Tuis</a>
         <a href="#produkte" data-en="Products">Produkte</a>
         <a href="#galery" data-en="Gallery">Galery</a>
+        <a href="#aanbiedinge" data-en="Specials">Aanbiedinge</a>
         <a href="#hoe" data-en="How it works">Hoe dit werk</a>
         <a href="#oor-ons" data-en="About Us">Oor Ons</a>
         <a href="#kontak" data-en="Contact">Kontak</a>
       </nav>
       <div class="lang-toggle" role="group" aria-label="Kies taal / Choose language">
-        <button type="button" data-lang="af" class="active" aria-pressed="true">AF</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="af" class="active" aria-pressed="true">Afrikaans</button>
+        <button type="button" data-lang="en" aria-pressed="false">English</button>
       </div>
-      <a class="btn-fb" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg>
-        Facebook
+      <a class="btn-fb" href="https://www.facebook.com/BederfJouselfGeskenke/" target="_blank" rel="noopener" aria-label="Facebook">
+        <span class="fb-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.6-1.6h1.7V4.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V14h2.7v8h3.4z"/></svg></span>
+        <span>Facebook</span>
       </a>
     </div>
   </div>
 </header>
 
 <!-- ============ HERO ============ -->
-<section class="hero" id="tuis">
+<section class="hero page" id="tuis">
   <div class="wrap">
     <div>
       <span class="kicker rise d1" data-en="Personalised gifts · Meyerton">Persoonlike geskenke · Meyerton</span>
@@ -438,7 +481,7 @@
 </section>
 
 <!-- ============ PRODUCTS ============ -->
-<section id="produkte">
+<section id="produkte" class="page">
   <div class="wrap">
     <div class="sect-head reveal">
       <span class="kicker" data-en="Our Products">Ons Produkte</span>
@@ -481,7 +524,7 @@
           </svg>
         </div>
         <h3 data-en="Brandy Glasses">Brandewynglase</h3>
-        <p data-en="Sturdy snifters for the gents (and the ladies!) — engraved just the way you want.">Stewige snifters vir die manne (en die tannies!) — gegraveer soos jy wil.</p>
+        <p data-en="Sturdy snifters for the gents (and the ladies!) — personalised just the way you want.">Stewige snifters vir die manne (en die tannies!) — pasgemaak soos jy wil.</p>
       </div>
       <div class="card reveal">
         <span class="tag" data-en="For everyone">Vir almal</span>
@@ -501,7 +544,7 @@
 </section>
 
 <!-- ============ GALLERY ============ -->
-<section id="galery">
+<section id="galery" class="page">
   <div class="wrap">
     <div class="sect-head reveal">
       <span class="kicker" data-en="From our shop">Uit ons winkel</span>
@@ -521,7 +564,7 @@
 </section>
 
 <!-- ============ PROMOS ============ -->
-<section id="aanbiedinge">
+<section id="aanbiedinge" class="page">
   <div class="wrap">
     <div class="sect-head reveal">
       <span class="kicker" data-en="Specials">Aanbiedinge</span>
@@ -542,7 +585,7 @@
 </section>
 
 <!-- ============ HOW IT WORKS ============ -->
-<section id="hoe">
+<section id="hoe" class="page">
   <div class="wrap">
     <div class="sect-head reveal">
       <span class="kicker" data-en="How it works">Hoe dit werk</span>
@@ -555,7 +598,7 @@
       </div>
       <div class="step reveal">
         <h3 data-en="Send your message">Stuur jou boodskap</h3>
-        <p data-en="Give us the name, date or message you'd like engraved. We make it personal and special.">Gee ons die naam, datum of boodskap wat jy gegraveer wil hê. Ons maak dit persoonlik en spesiaal.</p>
+        <p data-en="Give us the name, date or message you'd like on your gift. We make it personal and special.">Gee ons die naam, datum of boodskap wat jy op jou geskenk wil hê. Ons maak dit persoonlik en spesiaal.</p>
       </div>
       <div class="step reveal">
         <h3 data-en="Receive &amp; enjoy">Ontvang &amp; bederf</h3>
@@ -566,21 +609,21 @@
 </section>
 
 <!-- ============ ABOUT ============ -->
-<section id="oor-ons">
+<section id="oor-ons" class="page">
   <div class="wrap">
     <div class="reveal">
       <span class="kicker" data-en="About Us">Oor Ons</span>
       <h2 data-en="A small business with a <em>big heart</em>, from Meyerton.">’n Klein besigheid met ’n <em>groot hart</em>, uit Meyerton.</h2>
-      <p data-en="Bederf Jouself Geskenke believes everyone deserves something made just for them. Every glass is engraved with care and every gift put together with love — because a personal gift says more than a thousand words.">
+      <p data-en="Bederf Jouself Geskenke believes everyone deserves something made just for them. Every item is custom-made with care and every gift put together with love — because a personal gift says more than a thousand words.">
         Bederf Jouself Geskenke glo elke mens verdien iets wat nét vir hulle gemaak is.
-        Elke glas word met sorg gegraveer en elke geskenk met liefde saamgestel —
+        Elke item word met sorg pasgemaak en elke geskenk met liefde saamgestel —
         want ’n persoonlike geskenk sê meer as duisend woorde.
       </p>
       <blockquote class="motto" data-en="“In a world full of roses, be a sunflower.”">“In ’n wêreld vol van rose, wees ’n sonneblom.”</blockquote>
     </div>
     <div class="about-facts reveal">
       <figure class="about-logo"><img src="images/own-logo-white.jpg" alt="Bederf Jouself Geskenke embleem: sonneblom met die leuse ‘In ’n wêreld vol van rose wees ’n sonneblom’" loading="lazy"></figure>
-      <div class="fact"><span class="dot"></span><div><strong data-en="Personally engraved">Persoonlik gegraveer</strong><span data-en="Every item is made individually — no two are the same.">Elke item word individueel gemaak — geen twee is dieselfde nie.</span></div></div>
+      <div class="fact"><span class="dot"></span><div><strong data-en="Personally made">Persoonlik gemaak</strong><span data-en="Every item is made individually — no two are the same.">Elke item word individueel gemaak — geen twee is dieselfde nie.</span></div></div>
       <div class="fact"><span class="dot"></span><div><strong data-en="For all ages">Vir alle ouderdomme</strong><span data-en="From toddlers to grandpas and grandmas — there's something for everyone.">Van kleuters tot oupas en oumas — daar’s iets vir almal.</span></div></div>
       <div class="fact"><span class="dot"></span><div><strong data-en="Local &amp; proud">Plaaslik &amp; trots</strong><span data-en="Rooted in Meyerton, Midvaal — support local!">Gewortel in Meyerton, Midvaal — ondersteun plaaslik!</span></div></div>
     </div>
@@ -588,7 +631,7 @@
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section id="kontak">
+<section id="kontak" class="page">
   <div class="wrap">
     <div class="panel reveal">
       <div>
@@ -651,13 +694,46 @@
       }));
   }
 
-  // scroll-reveal
+  // scroll-reveal (each tab is short, so reveals inside a shown tab are forced in below)
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     }
   }, { threshold: 0.15 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ---------- tabbed navigation: show one section at a time, cleanly ----------
+  (function () {
+    const pages = Array.from(document.querySelectorAll('.page'));
+    if (!pages.length) return;
+    const ids = pages.map(p => p.id);
+    const navLinks = Array.from(document.querySelectorAll('nav.links a[href^="#"]'));
+    const DEFAULT = ids.includes('tuis') ? 'tuis' : ids[0];
+
+    function routeId() {
+      const h = decodeURIComponent(location.hash.replace('#', ''));
+      return ids.includes(h) ? h : DEFAULT;
+    }
+
+    function showTab(id, scrollTop) {
+      if (!ids.includes(id)) id = DEFAULT;
+      pages.forEach(p => {
+        const on = p.id === id;
+        p.classList.toggle('active', on);
+        if (on) p.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+      });
+      navLinks.forEach(a => {
+        const on = a.getAttribute('href') === '#' + id;
+        a.classList.toggle('active', on);
+        if (on) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
+      if (scrollTop !== false) window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('hashchange', () => showTab(routeId()));
+    showTab(routeId(), false);
+  })();
 
   // language toggle (AF default; EN stored in data-en attributes)
   const TITLES = {

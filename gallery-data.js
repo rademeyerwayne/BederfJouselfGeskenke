@@ -2,7 +2,7 @@ window.GALLERY = [
 {f:"fb-photo-7.jpg",c:"produkte",af:"Verjaarsdag-geskenkstel: wyn, nuwigheid-vadoek en ’n mooi strik.",en:"Birthday gift set: wine, a novelty tea towel and a pretty bow."},
 {f:"fb-photo-8.jpg",c:"produkte",af:"“It’s Your Birthday!” — wyn en vadoek, reg vir die partytjie.",en:"“It’s Your Birthday!” — wine and tea towel, ready for the party."},
 {f:"fb-photo-9.jpg",c:"produkte",af:"“I cook as good as I look” — potlap-en-vadoekstel.",en:"“I cook as good as I look” — pot holder and tea towel set."},
-{f:"fb-photo-10.jpg",c:"produkte",af:"Volledige kombuis-stel met gegraveerde bamboes-snyplank.",en:"Complete kitchen set with an engraved bamboo cutting board."},
+{f:"fb-photo-10.jpg",c:"produkte",af:"Volledige kombuis-stel met gepersonaliseerde bamboes-snyplank.",en:"Complete kitchen set with a personalised bamboo cutting board."},
 {f:"fb-photo-14.jpg",c:"produkte",af:"Bamboes-snyplank “The Righteous man walks in His integrity” — spesiale bestelling vir Chrisma Fellowship.",en:"Bamboo cutting board “The Righteous man walks in His integrity” — a special order for Chrisma Fellowship."},
 {f:"fb-photo-15.jpg",c:"produkte",af:"Kombuis-bederf: “I cook as good as I look” potlappe, nuwigheid-vadoek en verjaarsdagwyn.",en:"Kitchen treats: “I cook as good as I look” pot holders, a novelty tea towel and birthday wine."},
 {f:"fb-photo-16.jpg",c:"produkte",af:"Volledige kombuisstel — snyplank, wyn, vadoeke en potlappe.",en:"Complete kitchen set — cutting board, wine, tea towels and pot holders."},
